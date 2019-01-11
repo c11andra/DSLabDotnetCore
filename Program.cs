@@ -6,7 +6,36 @@ namespace DSLabDotNetCore
     {
         static void Main(string[] args)
         {
-            RunGraphDemo();
+            //RunGraphDemo();
+            RunBSTDemo();
+        }
+
+        private static void RunBSTDemo()
+        {
+            var bst = new BST();
+            bst.Insert(10);
+            bst.Insert(11);
+            bst.Insert(1);
+            bst.Insert(2);
+
+            if(bst.Find(1))
+            {
+                Console.WriteLine("Found 1");
+            }
+            else
+            {
+                Console.WriteLine("Could not find 1");
+            }
+
+            if(bst.Find(100))
+            {
+                Console.WriteLine("Found 100");
+            }
+            else
+            {
+                Console.WriteLine("Could Not find 100");
+            }
+
         }
 
         private static void RunGraphDemo()
